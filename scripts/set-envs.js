@@ -1,13 +1,16 @@
 //Creamos un script para que nuestros environments se actualicen de manera automatica
 
 // 1. Leemos del file system(fs). Cogemos el mkdirSync(crea un directorio) y el writeFileSync(crea el archivo)
-const { writeFileSync, mkdirSync } = require('fs');
+// const { writeFileSync, mkdirSync } = require('fs');
+import { writeFileSync, mkdirSync } from 'fs';
 
 // 2. Necesitamos leer las variables de entorno. PAra ello, necesitamos el paquete dotenv
 // Instalacion del paquete dotenv con: npm i -D dotevn
 // La usamos con la configuracion por defecto, que establecen las variables de entorno que van a estar
 // en el archivo .env
-require( 'dotenv' ).config();
+// require( 'dotenv' ).config();
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 // 3. Creamos las constantes, que crean un directorio que se encontraran dentro de los paths indicados.
 // El primero se usara en modo produccion, el segundo en modo desarrollo
