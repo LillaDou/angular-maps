@@ -20,7 +20,12 @@
     "@angular/router": "^21.2.0",
     "@tailwindcss/postcss": "^4.3.3",
     "daisyui": "^5.7.42",
+<<<<<<< Updated upstream
     "mapbox-gl": "^3.31.0",
+=======
+    "mapbox-gl": "^3.32.0",
+    "maplibre-gl": "^6.12.0",
+>>>>>>> Stashed changes
     "postcss": "^8.5.28",
     "rxjs": "~7.8.0",
     "tailwindcss": "^4.3.3",

@@ -1,5 +1,9 @@
 import { AfterViewInit, Component, ElementRef, viewChild } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl/esm';
+<<<<<<< Updated upstream
+=======
+import 'mapbox-gl/dist/mapbox-gl.css';
+>>>>>>> Stashed changes
 import { environment } from '../../../environments/environment';
 
 
