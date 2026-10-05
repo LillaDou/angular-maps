@@ -86,6 +86,19 @@ export class FullscreenMapPage implements AfterViewInit {
       this.coordinates.set(center);
     })
 
+    map.on('load', () => {
+      console.log('Map loaded');
+    })
+
+    map.addControl(new mapboxgl.FullscreenControl() );
+    // Anade el boton de full screen, el cual al hacer click, quita cualquier distraccion de la pantalla. 
+    //Como por ejemplo, el zoon, las coordenadas...
+    map.addControl(new mapboxgl.NavigationControl() );
+    //Anade controles en el mapa con el +, -, brujula... propios de mapbox
+    map.addControl(new mapboxgl.ScaleControl() );
+    //Anade el control de escala en metros en la parte baja izquierda del mapa
+
+
     this.map.set(map);
   }
 }
