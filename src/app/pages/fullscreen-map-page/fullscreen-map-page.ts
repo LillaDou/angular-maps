@@ -96,7 +96,7 @@ export class FullscreenMapPage implements AfterViewInit {
     map.addControl(new mapboxgl.NavigationControl() );
     //Anade controles en el mapa con el +, -, brujula... propios de mapbox
     map.addControl(new mapboxgl.ScaleControl() );
-    //Anade el control de escala en metros en la parte baja izquierda del mapa
+    //Anade el control de escala en metrosen la parte baja izquierda del mapa
 
 
     this.map.set(map);
