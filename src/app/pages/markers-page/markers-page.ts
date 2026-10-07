@@ -90,4 +90,18 @@ export class MarkersPage implements AfterViewInit{
 
   }
 
+  deleteMarker( marker: Marker){
+    if( !this.map() ) return;
+    const map = this.map()!;
+
+    marker.mapboxMarker.remove(); //Esto elimina el marker del mapa, pero no de la lista de marcadores que 
+    // hemos creado
+
+    this.markers.set( this.markers().filter( m => m.id !== marker.id ) );
+    // this.markers.update( this.markers().filter( m => m.id !== marker.id ) ); 
+    // Podemos hacer el .set() o el .update(). Ambos son validos
+    // Con esto eliminamos el marcador de nuestra lista de marcadores
+
+  }
+
 }
